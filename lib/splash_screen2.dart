@@ -71,15 +71,17 @@ class Splash_Screen2 extends StatelessWidget {
                         borderRadius:  BorderRadius.circular(10*fem),
                       ),
                       child:
-                      Text(
-                        'ابدأ الأن',
-                        textAlign:  TextAlign.center,
-                        style:  GoogleFonts.amiri (
+                      Center(
+                        child: Text(
+                          'ابدأ الأن',
+                          textAlign:  TextAlign.center,
+                          style:  GoogleFonts.amiri (
 
-                          fontSize:  17.5*ffem,
-                          fontWeight:  FontWeight.w400,
-                          height:  1.76*ffem/fem,
-                          color:  Color(0xffffffff),
+                            fontSize:  17.5*ffem,
+                            fontWeight:  FontWeight.w400,
+                            height:  1.76*ffem/fem,
+                            color:  Color(0xffffffff),
+                          ),
                         ),
                       ),
                     ),
@@ -110,6 +112,14 @@ class Splash_Screen2 extends StatelessWidget {
                     ),
                   ),
                 ),
+                const Positioned(
+                  left: 0,
+                    top: 150,
+                    child: Align(
+                      child: Image(
+                          width: 100,
+                          image: AssetImage('assets/pictures/sidepic.png')),
+                    ))
 
               ],
             ),
